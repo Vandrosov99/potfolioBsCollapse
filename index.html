@@ -85,7 +85,8 @@
 
         <!-- Home -->
         <div id="home" class="collapse show">
-            <div class=" card card-body bg-primary text-white">
+            <div class=" card card-body bg-primary text-white py-5">
+                <h2>Welcome To My Page</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit esse sint at
                     aliquid ratione?</p>
             </div>
@@ -128,50 +129,82 @@
             </div>
         </div>
 
-        <div id="resume" class="collapse show">
-            <div class=" card card-body bg-success text-white">
+        <div id="resume" class="collapse">
+            <div class=" card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sit esse sint at
                     aliquid ratione?</p>
             </div>
 
-            <div class="card card-body py-5">
-                <h3>My Skills</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam velit cumque asperiores
-                    repudiandae. Nulla.</p>
-                <hr>
-                <h4>HTML 5</h4>
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" style="width: 100%;">
 
+        </div>
+        <div class="card card-body py-5">
+            <h3>Where i Worked?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eligendi distinctio aspernatur cupiditate
+                nihil fugiat eum. Animi deleniti libero temporibus.</p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">EPAM</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia recusandae omnis fugit non
+                            veritatis natus ab sunt modi rerum maiores!
+                        </div>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Position:Front-End dev
+                        </p>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Phone: (38)-077-231-12-12
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates : 2019-2020</h6>
                     </div>
                 </div>
-                <h4>CSS 3</h4>
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" style="width: 100%;">
-
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">CodeNinja</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia recusandae omnis fugit non
+                            veritatis natus ab sunt modi rerum maiores!
+                        </div>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Position:FullStack WEB Dev
+                        </p>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Phone: (38)-077-551-12-12
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates : 2020-2020</h6>
                     </div>
                 </div>
-                <h4>JavaScript</h4>
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" style="width: 90%;">
-
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">MainCo</h4>
                     </div>
-                </div>
-                <h4>PHP</h4>
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" style="width: 80%;">
-
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia recusandae omnis fugit non
+                            veritatis natus ab sunt modi rerum maiores!
+                        </div>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Position:CEO
+                        </p>
+                        <p class="p-2 mb-3 text-white bg-dark">
+                            Phone: (38)-077-212-12-12
+                        </p>
                     </div>
-                </div>
-                <h4>Bla bla bla</h4>
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" style="width: 70%;">
-
+                    <div class="card-footer">
+                        <h6 class="text-muted">working now</h6>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Footer -->
         <footer id="main-footer" class="p-5 bg-dark text-white">
@@ -198,8 +231,11 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
     <script>
-        // Получаем год(который на компе) для footer copyright
-        $("#year").text(new Date().getFullYear());
+        // для закриття всіх інших колапсів
+        $('.port-item').click(function () {
+            console.log("enter")
+            $('.collapse').collapse('hide');
+        });
     </script>
 </body>
 
