@@ -35,13 +35,17 @@ now the #innerDiv is going to have height:10px
 
 #main-header .port-item {
     flex-grow: 1;
+    border-bottom: none!important;
 }
 
 #main-header .port-item:hover {
     opacity: 0.8;
     cursor: pointer;
 }
-
+.card{
+    border-radius: 0!important;
+    border-top:none!important;
+}
 /* mobile */
 
 @media(min-width:1199px) {
