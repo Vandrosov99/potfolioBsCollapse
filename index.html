@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icons awesome -->
+    <script src="https://kit.fontawesome.com/05bac76c40.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Подключка стилей -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="" id="main-header">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5">
+                    <img src="img/person1.jpg" alt="">
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="d-flex flex-column">
+                        <div class="p-5 bg-dark text-white">
+                            <div class="mob d-flex flex-row justify-content-center  align-items-center">
+                                <h1 class="display-4 mx-4">John Doe</h1>
+                                <div class=" d-flex d-row justify-content-around align-items-center">
+                                    <div class="d-md-block mx-3">
+                                        <a href="http://twitter.com" class="text-white">
+                                            <i class="fab fa-twitter fa-2x"></i></a>
+                                    </div>
+                                    <div class="d-md-block mx-3">
+                                        <a href="http://facebook.com" class="text-white">
+                                            <i class="fab fa-facebook fa-2x"></i></a>
+                                    </div>
+                                    <div class="d-md-block mx-3">
+                                        <a href="http://instagram.com" class="text-white">
+                                            <i class="fab fa-instagram fa-2x"></i></a>
+                                    </div>
+                                    <div class=" d-md-block mx-3">
+                                        <a href="http://github.com" class="text-white">
+                                            <i class="fab fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-black">
+                            Full stack Web developer in Kyiv
+                        </div>
+
+                        <div class="mob-2 d-flex flex-row text-white align-items-stretch text-center">
+                            <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                <i class="fas fa-home fa-2x d-block">
+
+                                </i>
+                                <span class="d-none d-sm-block">Home</span>
+                            </div>
+                            <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                                <i class="fas fa-graduation-cap fa-2x d-block">
+
+                                </i>
+                                <span class="d-none d-sm-block">Resume</span>
+                            </div>
+                            <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                                <i class="fas fa-folder-open fa-2x d-block">
+
+                                </i>
+                                <span class="d-none d-sm-block">work</span>
+                            </div>
+                            <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                                <i class="fas fa-envelope fa-2x d-block">
+
+                                </i>
+                                <span class="d-none d-sm-block">Contact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <!-- Jquery minifed version -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- popperJS + bootstrapJS  without slimJS! -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        // Получаем год(который на компе) для footer copyright
+        $("#year").text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* 
+why i am using height :100% and not using img-fluid
+
+height:100%
+<div style="height:50px">
+    <div id="innerDiv" style="height:100%">
+    </div>
+</div>
+#innerDiv is going to have height:50px
+
+
+
+
+height:auto
+<div style="height:50px">
+    <div id="innerDiv" style="height:auto">
+          <div id="evenInner" style="height:10px">
+          </div>
+    </div>
+</div>
+now the #innerDiv is going to have height:10px
+
+
+
+*/
+#main-header img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-black {
+    background: #000;
+    color: #fff;
+}
+
+#main-header .port-item {
+    flex-grow: 1;
+}
+
+#main-header .port-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* mobile */
+
+@media(min-width:1199px) {
+    .port-item {
+        padding: 3em !important;
+    }
+}
+
+@media(max-width:767px) {
+    .mob {
+        flex-direction: column !important;
+    }
+}
+
+@media(max-width:368px) {
+    .mob-2 {
+        flex-wrap: wrap;
+    }
+
+
+}
